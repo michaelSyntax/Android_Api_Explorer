@@ -3,11 +3,21 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/homeFragment">
+    app:startDestination="@id/mockFragment">
 
     <fragment
-        android:id="@+id/homeFragment"
-        android:name="com.example.android_base_starter.view.HomeFragment"
-        android:label="fragment_home"
-        tools:layout="@layout/fragment_home" />
+        android:id="@+id/googleFragment"
+        android:name="com.example.android_base_starter.view.GoogleFragment"
+        android:label="fragment_google"
+        tools:layout="@layout/fragment_google" />
+    <fragment
+        android:id="@+id/OAuthFragment"
+        android:name="com.example.android_base_starter.view.OAuthFragment"
+        android:label="fragment_o_auth"
+        tools:layout="@layout/fragment_o_auth" />
+    <fragment
+        android:id="@+id/mockFragment"
+        android:name="com.example.android_base_starter.view.MockFragment"
+        android:label="fragment_mock"
+        tools:layout="@layout/fragment_mock" />
 </navigation>

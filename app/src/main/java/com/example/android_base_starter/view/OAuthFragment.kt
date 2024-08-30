@@ -7,12 +7,13 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.activityViewModels
 import com.example.android_base_starter.R
-import com.example.android_base_starter.databinding.FragmentHomeBinding
+import com.example.android_base_starter.databinding.FragmentMockBinding
+import com.example.android_base_starter.databinding.FragmentOAuthBinding
 import com.example.android_base_starter.view.adapter.ItemAdapter
 import com.example.android_base_starter.viewModel.MainViewModel
 
-class HomeFragment : Fragment() {
-    private lateinit var vb: FragmentHomeBinding
+class OAuthFragment : Fragment() {
+    private lateinit var vb: FragmentOAuthBinding
     private val viewModel: MainViewModel by activityViewModels()
 
     override fun onCreateView(
@@ -20,7 +21,7 @@ class HomeFragment : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        vb = FragmentHomeBinding.inflate(layoutInflater)
+        vb = FragmentOAuthBinding.inflate(layoutInflater)
         viewModel.getItems()
         return vb.root
     }
@@ -29,7 +30,7 @@ class HomeFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         viewModel.items.observe(viewLifecycleOwner) { items ->
-            vb.rvItems.adapter = ItemAdapter(items)
+
         }
     }
 }
