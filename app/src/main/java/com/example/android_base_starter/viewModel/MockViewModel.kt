@@ -6,13 +6,13 @@ import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.viewModelScope
 import com.example.android_base_starter.model.MockRepository
-import com.example.android_base_starter.model.data.Item
-import com.example.android_base_starter.model.data.ReservationRequest
-import com.example.android_base_starter.model.data.Restaurant
+import com.example.android_base_starter.model.data.mockApi.Item
+import com.example.android_base_starter.model.data.mockApi.ReservationRequest
+import com.example.android_base_starter.model.data.mockApi.Restaurant
 import com.example.android_base_starter.model.remote.MockApi
 import kotlinx.coroutines.launch
 
-class MainViewModel(application: Application): AndroidViewModel(application) {
+class MockViewModel(application: Application): AndroidViewModel(application) {
     private val repository = MockRepository(MockApi)
 
     private val _items = MutableLiveData<List<Item>>()

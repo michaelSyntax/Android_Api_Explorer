@@ -6,7 +6,7 @@ import androidx.recyclerview.widget.RecyclerView
 import androidx.recyclerview.widget.RecyclerView.ViewHolder
 import coil.load
 import com.example.android_base_starter.databinding.ListRestautanteBinding
-import com.example.android_base_starter.model.data.Restaurant
+import com.example.android_base_starter.model.data.mockApi.Restaurant
 
 class RestaurantAdapter(
     private val restaurants: List<Restaurant>

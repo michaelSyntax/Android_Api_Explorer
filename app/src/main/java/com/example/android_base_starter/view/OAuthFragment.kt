@@ -6,15 +6,12 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.activityViewModels
-import com.example.android_base_starter.R
-import com.example.android_base_starter.databinding.FragmentMockBinding
 import com.example.android_base_starter.databinding.FragmentOAuthBinding
-import com.example.android_base_starter.view.adapter.ItemAdapter
-import com.example.android_base_starter.viewModel.MainViewModel
+import com.example.android_base_starter.viewModel.MockViewModel
 
 class OAuthFragment : Fragment() {
     private lateinit var vb: FragmentOAuthBinding
-    private val viewModel: MainViewModel by activityViewModels()
+    private val viewModel: MockViewModel by activityViewModels()
 
     override fun onCreateView(
         inflater: LayoutInflater,

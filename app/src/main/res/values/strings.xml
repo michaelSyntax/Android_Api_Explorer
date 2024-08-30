@@ -5,4 +5,6 @@
     <string name="mockapi">MockApi</string>
     <string name="googleapi">GoogleApi</string>
     <string name="oauth">OAuth</string>
+    <string name="textsearch">TextSearch</string>
+    <string name="nearby">Nearby</string>
 </resources>

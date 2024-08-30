@@ -6,7 +6,7 @@ import androidx.recyclerview.widget.RecyclerView
 import androidx.recyclerview.widget.RecyclerView.ViewHolder
 import coil.load
 import com.example.android_base_starter.databinding.ListItemBinding
-import com.example.android_base_starter.model.data.Item
+import com.example.android_base_starter.model.data.mockApi.Item
 
 class ItemAdapter(
     private val items: List<Item>
