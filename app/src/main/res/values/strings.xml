@@ -2,4 +2,7 @@
     <string name="app_name">Android_Base_Starter</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="mockapi">MockApi</string>
+    <string name="googleapi">GoogleApi</string>
+    <string name="oauth">OAuth</string>
 </resources>
