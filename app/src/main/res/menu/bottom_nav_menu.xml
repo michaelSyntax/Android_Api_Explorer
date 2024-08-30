@@ -3,17 +3,17 @@
 
     <item
         android:id="@+id/mockFragment"
-        android:title="@string/mockapi"
         android:icon="@android:drawable/ic_menu_view"
-        />
+        android:title="@string/mockapi">
+    </item>
     <item
         android:id="@+id/googleFragment"
-        android:title="@string/googleapi"
         android:icon="@android:drawable/ic_menu_compass"
-        />
+        android:title="@string/googleapi">
+    </item>
     <item
         android:id="@+id/OAuthFragment"
-        android:title="@string/oauth"
         android:icon="@android:drawable/ic_menu_slideshow"
-        />
+        android:title="@string/oauth">
+    </item>
 </menu>

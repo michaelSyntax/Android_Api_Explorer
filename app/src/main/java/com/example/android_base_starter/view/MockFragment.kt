@@ -8,6 +8,7 @@ import android.view.ViewGroup
 import androidx.fragment.app.activityViewModels
 import com.example.android_base_starter.databinding.FragmentMockBinding
 import com.example.android_base_starter.view.adapter.ItemAdapter
+import com.example.android_base_starter.view.adapter.RestaurantAdapter
 import com.example.android_base_starter.viewModel.MainViewModel
 
 class MockFragment : Fragment() {
@@ -20,15 +21,15 @@ class MockFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View {
         vb = FragmentMockBinding.inflate(layoutInflater)
-        viewModel.getItems()
+        viewModel.getRestaurants()
         return vb.root
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        viewModel.items.observe(viewLifecycleOwner) { items ->
-            vb.rvItems.adapter = ItemAdapter(items)
+        viewModel.restaurants.observe(viewLifecycleOwner) { restaurants ->
+            vb.rvItems.adapter = RestaurantAdapter(restaurants)
         }
     }
 }

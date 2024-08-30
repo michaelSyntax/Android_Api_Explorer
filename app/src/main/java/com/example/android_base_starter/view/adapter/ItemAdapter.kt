@@ -28,6 +28,6 @@ class ItemAdapter(
     override fun onBindViewHolder(holder: ItemViewHolder, position: Int) {
         val item = items[position]
         holder.vb.tvItem.text = item.name
-        holder.vb.ivItem.load(item)
+        holder.vb.ivItem.load(item.image)
     }
 }

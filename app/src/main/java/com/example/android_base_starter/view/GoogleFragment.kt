@@ -22,15 +22,11 @@ class GoogleFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View {
         vb = FragmentGoogleBinding.inflate(layoutInflater)
-        viewModel.getItems()
         return vb.root
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        viewModel.items.observe(viewLifecycleOwner) { items ->
-
-        }
     }
 }

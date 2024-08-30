@@ -22,7 +22,6 @@ class OAuthFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View {
         vb = FragmentOAuthBinding.inflate(layoutInflater)
-        viewModel.getItems()
         return vb.root
     }
 
