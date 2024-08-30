@@ -6,14 +6,14 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.activityViewModels
+import androidx.fragment.app.viewModels
 import com.example.android_base_starter.databinding.FragmentMockBinding
-import com.example.android_base_starter.view.adapter.ItemAdapter
 import com.example.android_base_starter.view.adapter.RestaurantAdapter
-import com.example.android_base_starter.viewModel.MainViewModel
+import com.example.android_base_starter.viewModel.MockViewModel
 
 class MockFragment : Fragment() {
     private lateinit var vb: FragmentMockBinding
-    private val viewModel: MainViewModel by activityViewModels()
+    private val viewModel: MockViewModel by viewModels()
 
     override fun onCreateView(
         inflater: LayoutInflater,

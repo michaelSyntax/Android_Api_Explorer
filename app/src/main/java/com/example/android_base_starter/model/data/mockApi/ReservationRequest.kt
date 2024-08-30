@@ -1,4 +1,4 @@
-package com.example.android_base_starter.model.data
+package com.example.android_base_starter.model.data.mockApi
 
 data class ReservationRequest(
     val restaurantId: Int,

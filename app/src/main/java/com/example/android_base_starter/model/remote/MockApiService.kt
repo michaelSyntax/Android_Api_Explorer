@@ -1,8 +1,8 @@
 package com.example.android_base_starter.model.remote
 
-import com.example.android_base_starter.model.data.Item
-import com.example.android_base_starter.model.data.ReservationRequest
-import com.example.android_base_starter.model.data.Restaurant
+import com.example.android_base_starter.model.data.mockApi.Item
+import com.example.android_base_starter.model.data.mockApi.ReservationRequest
+import com.example.android_base_starter.model.data.mockApi.Restaurant
 import com.squareup.moshi.Moshi
 import com.squareup.moshi.kotlin.reflect.KotlinJsonAdapterFactory
 import okhttp3.OkHttpClient

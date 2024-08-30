@@ -1,8 +1,8 @@
 package com.example.android_base_starter.model
 
-import com.example.android_base_starter.model.data.Item
-import com.example.android_base_starter.model.data.ReservationRequest
-import com.example.android_base_starter.model.data.Restaurant
+import com.example.android_base_starter.model.data.mockApi.Item
+import com.example.android_base_starter.model.data.mockApi.ReservationRequest
+import com.example.android_base_starter.model.data.mockApi.Restaurant
 import com.example.android_base_starter.model.remote.MockApi
 
 class MockRepository(private val mockApi: MockApi) {
